@@ -136,3 +136,21 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 왜 Marshal - Unmarshal로 구현하지 않고 `json.NewDecoder(r.Body).Decode(teddy)` 로 구현했는지 알 것 같다.
 
 대칭의 아름다움을 찾다가 `io.ReadAll` 같은 로직을 추가해야 하는 번거로움이 있기 때문이다.
+
+json.Unmarshal + json.Marshal 로직을 설명한다.
+
+[Unmarshal](https://pkg.go.dev/encoding/json#Unmarshal)은 **`"Unmarshal(data []byte, v any) error"`**으로 매개변수가 `[]byte` 타입을 가져야 하는데 r.Body는 위에서 언급했던 것처럼 `io.ReadCloser`이다.
+
+코드 상에서 형변환을 해주면 되지 않을까? 하고 접근해보았다.
+
+![스크린샷 2024-01-16 오후 9 02 37](https://github.com/may-30/may-30.github.io/assets/155306250/09ac95da-c562-4ffd-8881-2d0ed8859299)
+
+강타입인 golang은 형변환에 호락호락하지 않다는 것을 배우게 된다...
+
+약간의 꼼수를 사용한 것이 [io.ReadAll](https://pkg.go.dev/io#ReadAll) (구 ioutil.ReadAll) 을 이용한 것이다.
+
+io.ReadAll은 **`"ReadAll(r Reader) ([]byte, error)"`**으로 `[]byte` 타입을 반환값으로 준다.
+
+`io.ReadAll`을 통해서 []byte로 형변환된 `r.Body`는 `json.Unmarshal`을 통해서 Teddy 구조체로 디코딩이 되며 데이터를 조작할 수 있게 된다.
+
+~~역시 잘 알려진 방법에는 다 이유가 있다... ^__^~~
