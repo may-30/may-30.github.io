@@ -24,7 +24,7 @@ last_modified_at: 2024-01-21
 
 ### 2-1. Oauth 로직
 
-![스크린샷 2024-01-21 14 48 24](https://github.com/may-30/may-30.github.io/assets/155306250/8370754c-15ef-4ecc-9c1a-39c671b3b563)
+![스크린샷 2024-01-21 14 48 24](https://github.com/may-30/may-30.github.io/assets/155306250/8370754c-15ef-4ecc-9c1a-39c671b3b563){: .align-center}
 
 Oauth의 로직은 위 사진과 같다.
 
@@ -166,9 +166,9 @@ func main() {
 
 ### 2-3. 구현 사진
 
-![스크린샷 2024-01-21 15 22 56](https://github.com/may-30/may-30.github.io/assets/155306250/fa55acb6-abf7-43f6-9b37-f98a5b6b7182)
+![스크린샷 2024-01-21 15 22 56](https://github.com/may-30/may-30.github.io/assets/155306250/fa55acb6-abf7-43f6-9b37-f98a5b6b7182){: .align-center}
 
-![스크린샷 2024-01-21 15 23 12](https://github.com/may-30/may-30.github.io/assets/155306250/edc51306-db54-4888-b254-d1645e2e7001)
+![스크린샷 2024-01-21 15 23 12](https://github.com/may-30/may-30.github.io/assets/155306250/edc51306-db54-4888-b254-d1645e2e7001){: .align-center}
 
 ### 2-4. 개선사항
 

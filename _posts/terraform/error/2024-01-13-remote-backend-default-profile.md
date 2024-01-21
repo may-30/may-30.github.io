@@ -14,7 +14,7 @@ last_modified_at: 2024-01-21
 
 ### 상황
 
-![123142edasdfasvdsva](https://github.com/may-30/may-30.github.io/assets/155306250/08db2467-48cd-46d6-a279-6971365baee0)
+![123142edasdfasvdsva](https://github.com/may-30/may-30.github.io/assets/155306250/08db2467-48cd-46d6-a279-6971365baee0){: .align-center}
 
 terraform `.tfstate`파일을 remote로 관리하기 위해 backend를 담당하는 terraform 폴더를 별도로 두어 s3 및 dynamodb를 생성하였다.
 
@@ -22,7 +22,7 @@ terraform `.tfstate`파일을 remote로 관리하기 위해 backend를 담당하
 
 ### 문제
 
-![293837643-7cfe6fe4-b173-49b1-b796-b47f5550bfb6](https://github.com/may-30/may-30.github.io/assets/155306250/40412c51-1352-4744-9219-e6919fe7517b)
+![293837643-7cfe6fe4-b173-49b1-b796-b47f5550bfb6](https://github.com/may-30/may-30.github.io/assets/155306250/40412c51-1352-4744-9219-e6919fe7517b){: .align-center}
 
 분명 profile을 지정하고 실행시켰는데 느닷없는 권한 부족이 발생한다.
 
@@ -69,7 +69,7 @@ terraform {
 
 나는 평소 보안이 조금 걱정되어서 aws cli의 default profile을 설정하지 않고 있었다.
 
-![293839772-ea567f99-e0fb-4e0e-83e6-cd5af60d056b](https://github.com/may-30/may-30.github.io/assets/155306250/09ae185d-c8ef-431e-8688-76115d4107bb)
+![293839772-ea567f99-e0fb-4e0e-83e6-cd5af60d056b](https://github.com/may-30/may-30.github.io/assets/155306250/09ae185d-c8ef-431e-8688-76115d4107bb){: .align-center}
 
 aws cli의 default profile을 설정하고 나니 정상적으로 backend s3를 참조할 수 있다고 나오며 에러가 발생하지 않는다.
 

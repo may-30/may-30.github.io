@@ -143,7 +143,7 @@ json.Unmarshal + json.Marshal 로직을 설명한다.
 
 코드 상에서 형변환을 해주면 되지 않을까? 하고 접근해보았다.
 
-![스크린샷 2024-01-16 오후 9 02 37](https://github.com/may-30/may-30.github.io/assets/155306250/09ac95da-c562-4ffd-8881-2d0ed8859299)
+![스크린샷 2024-01-16 오후 9 02 37](https://github.com/may-30/may-30.github.io/assets/155306250/09ac95da-c562-4ffd-8881-2d0ed8859299){: .align-center}
 
 강타입인 golang은 형변환에 호락호락하지 않다는 것을 배우게 된다...
 
