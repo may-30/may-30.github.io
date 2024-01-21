@@ -1,5 +1,5 @@
 ---
-title: '[error] remote backend 구성 후 backend 참조할 때 default profile이 없는 경우'
+title: '[terraform error] remote backend 구성 후 backend 참조할 때 default profile이 없는 경우'
 categories:
   - terraform error
 tags:
@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-01-13
-last_modified_at: 2024-01-13
+last_modified_at: 2024-01-21
 ---
 
 ## 1. 원인

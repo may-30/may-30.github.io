@@ -1,5 +1,5 @@
 ---
-title: '모듈을 생성할 때 별도의 variable을 json 파일로 참조하기'
+title: '[terraform lab] 모듈을 생성할 때 별도의 variable을 json 파일로 참조하기'
 categories:
   - terraform lab
 tags:
@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-01-15
-last_modified_at: 2024-01-15
+last_modified_at: 2024-01-21
 ---
 
 ## 1. 무슨 문제가 있었는가?

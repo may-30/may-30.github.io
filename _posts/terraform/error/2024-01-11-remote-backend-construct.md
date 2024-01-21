@@ -1,5 +1,5 @@
 ---
-title: '[error] remote backend 구성을 같은 디렉터리에 넣은 경우'
+title: '[terraform error] remote backend 구성을 같은 디렉터리에 넣은 경우'
 categories:
   - terraform error
 tags:
@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-01-11
-last_modified_at: 2024-01-11
+last_modified_at: 2024-01-21
 ---
 
 ## 1. 원인
