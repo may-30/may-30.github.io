@@ -1,7 +1,7 @@
 ---
 title: '[error] remote backend 구성을 같은 디렉터리에 넣은 경우'
 categories:
-  - terraform
+  - terraform error
 tags:
   - [iac, terraform, error]
 toc: true

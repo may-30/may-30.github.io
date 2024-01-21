@@ -1,7 +1,7 @@
 ---
 title: '[error] remote backend 구성 후 backend 참조할 때 default profile이 없는 경우'
 categories:
-  - terraform
+  - terraform error
 tags:
   - [iac, terraform, error]
 toc: true

@@ -1,7 +1,7 @@
 ---
 title: '모듈을 생성할 때 별도의 variable을 json 파일로 참조하기'
 categories:
-  - terraform
+  - terraform lab
 tags:
   - [iac, terraform, variables]
 toc: true

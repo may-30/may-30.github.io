@@ -11,15 +11,24 @@
             <span class="nav__sub-title">전체 글 수 {{sum}} 개</span>
       </li>
       <li>
-        <!--span 태그로 카테고리들을 크게 분류 iac -->
-        <span class="nav__sub-title">iac</span>
+        <!--span 태그로 카테고리들을 크게 분류 terraform -->
+        <span class="nav__sub-title">terraform</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
-                <!--terraform 카테고리 글들을 모아둔 페이지인 /categories/terraform 주소의 글로 링크 연결-->
+                <!--terraform-error 카테고리 글들을 모아둔 페이지인 /categories/terraform-error 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "terraform" %}
-                        <li><a href="/categories/terraform" class="">terraform ({{category[1].size}})</a></li>
+                    {% if category[0] == "terraform error" %}
+                        <li><a href="/categories/terraform-error" class="">error ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                <!--terraform-lab 카테고리 글들을 모아둔 페이지인 /categories/terraform-lab 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                {% for category in site.categories %}
+                    {% if category[0] == "terraform lab" %}
+                        <li><a href="/categories/terraform-lab" class="">lab ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
