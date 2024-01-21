@@ -1,7 +1,7 @@
 ---
-title: 'web handler 생성 방법 3가지'
+title: '[golang web] web handler 생성 방법 3가지'
 categories:
-  - golang
+  - golang web
 tags:
   - [golang, web]
 toc: true

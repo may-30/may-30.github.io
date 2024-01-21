@@ -1,7 +1,7 @@
 ---
-title: 'google oauth2 소셜로그인 개념 및 구현'
+title: '[golang web] google oauth2 소셜로그인 개념 및 구현'
 categories:
-  - golang
+  - golang web
 tags:
   - [golang, web, oauth2]
 toc: true

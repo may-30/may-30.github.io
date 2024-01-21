@@ -1,7 +1,7 @@
 ---
-title: 'json으로 데이터 주고받기'
+title: '[golang web] json으로 데이터 주고받기'
 categories:
-  - golang
+  - golang web
 tags:
   - [golang, web]
 toc: true
