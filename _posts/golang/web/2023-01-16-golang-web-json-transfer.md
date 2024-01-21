@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-01-16
-last_modified_at: 2024-01-16
+last_modified_at: 2024-01-21
 ---
 
 ## 1. 어떤 정보인가?
