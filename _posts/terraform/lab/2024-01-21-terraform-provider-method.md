@@ -6,8 +6,8 @@ tags:
   - [iac, terraform, variables]
 toc: true
 toc_sticky: true
-date: 2024-01-22
-last_modified_at: 2024-01-22
+date: 2024-01-21
+last_modified_at: 2024-01-21
 ---
 
 ## 1. 어떤 정보인가?
