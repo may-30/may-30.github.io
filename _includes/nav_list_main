@@ -1,0 +1,56 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+        <span>전체 글 수 {{sum}} 개</span>
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) AWS-->
+        <span class="nav__sub-title">AWS</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--AWS 카테고리 글들을 모아둔 페이지인 /categories/aws 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                {% for category in site.categories %}
+                    {% if category[0] == "eks" %}
+                        <li><a href="/categories/eks" class="">EKS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <!-- <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "network" %}
+                        <li><a href="/categories/network" class="">Network ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> -->
+        <!-- <span class="nav__sub-title">IAC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "terraform" %}
+                        <li><a href="/categories/terraform" class="">Terraform ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> -->
+        <!-- <span class="nav__sub-title">DEV</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "flutter" %}
+                        <li><a href="/categories/flutter" class="">Flutter ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> -->
+      </li>
+  </ul>
+</nav>
