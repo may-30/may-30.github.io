@@ -1,5 +1,5 @@
 ---
-title: "[EKS] AWS Auth 사라진다"
+title: "[EKS] aws auth 사라진다"
 categories:
   - eks
 tags:
