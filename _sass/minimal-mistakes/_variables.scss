@@ -13,7 +13,7 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$customFontStyle: 'KyoboHand';
+$customFontStyle: 'omyu_pretty'; // 'KyoboHand';
 
 $serif: $customFontStyle, Georgia, Times, serif !default;
 $sans-serif: $customFontStyle, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
@@ -157,9 +157,9 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 10px !default; // 200
+$right-sidebar-width: 200px !default; // 300
+$right-sidebar-width-wide: 250px !default; // 400
 
 /*
    Other
