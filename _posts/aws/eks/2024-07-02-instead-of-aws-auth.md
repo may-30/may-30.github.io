@@ -10,11 +10,11 @@ date: 2024-07-02
 last_modified_at: 2024-07-03
 ---
 
-![aws-eks](https://github.com/may-30/may-30.github.io/assets/155306250/9152a129-69af-4e72-8cd8-9f41524e0681)
+![aws-eks](https://github.com/may-30/may-30.github.io/assets/155306250/9152a129-69af-4e72-8cd8-9f41524e0681){: .align-center}
 
 # 0. 작성 취지
 
-![1](https://github.com/may-30/may-30.github.io/assets/155306250/e61a91a8-2062-418e-9302-6d73cc17d57c)
+![1](https://github.com/may-30/may-30.github.io/assets/155306250/e61a91a8-2062-418e-9302-6d73cc17d57c){: .align-center}
 
 [eks 공식 문서](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/auth-configmap.html)에서 위 사진과 같이 `aws-auth`는 더 이상 사용되지 않는다고 언급한다.
 
@@ -98,7 +98,7 @@ metadata:
 
 위 json 파일과 같이 정책을 담은 json 파일을 생성한다.
 
-(**❗️ 해당 정책은 다른 aws 서비스는 사용하지 못하고 오직 클러스터를 접근하기 위한 정말 최소한의 권한만 들어가있다는 점을 참고한다.**)
+(**❗️ 해당 정책은 다른 aws 서비스는 사용하지 못하고 오직 클러스터를 접근하기 위한 정말 최소한의 권한만 들어가있다는 점을 참고하면 됩니다.**)
 
 ```bash
 aws iam create-policy \
@@ -123,7 +123,7 @@ aws iam attach-user-policy \
 --policy-arn {test-policy-eks-readonly_ARN}
 ```
 
-![2](https://github.com/may-30/may-30.github.io/assets/155306250/f395f9af-66cf-496f-9f2e-d8b87e85600f)
+![2](https://github.com/may-30/may-30.github.io/assets/155306250/f395f9af-66cf-496f-9f2e-d8b87e85600f){: .align-center}
 
 위 사진을 통해서 성공적으로 연결된 모습을 확인할 수 있다.
 
@@ -202,7 +202,7 @@ kind: ConfigMap
 
 위 파일과 같이 `aws-auth`를 수정하면 된다.
 
-(**❗️ metadata는 불필요한 정보라 삭제함.**)
+(**❗️ metadata는 불필요한 정보라 삭제했습니다.**)
 
 ## 1-4. 접근 테스트
 
@@ -210,9 +210,9 @@ kind: ConfigMap
 aws eks update-kubeconfig --profile {test-eks-readonly_PROIFLE} --name {EKS_CLUSTER_NAME}
 ```
 
-![3](https://github.com/may-30/may-30.github.io/assets/155306250/c0c49e41-4a0b-49ee-9f3b-73dc119432f3)
+![3](https://github.com/may-30/may-30.github.io/assets/155306250/c0c49e41-4a0b-49ee-9f3b-73dc119432f3){: .align-center}
 
-![4](https://github.com/may-30/may-30.github.io/assets/155306250/19c73ae2-4358-4382-bd15-ebcc7b87bcb7)
+![4](https://github.com/may-30/may-30.github.io/assets/155306250/19c73ae2-4358-4382-bd15-ebcc7b87bcb7){: .align-center}
 
 조회는 잘 되지만 생성하거나 삭제하는 명령어는 forbidden 되는 모습을 확인할 수 있다.
 
@@ -252,9 +252,9 @@ kind: ConfigMap
 ```
 
 (초기상태로 돌려주면 된다.)
-(**❗️ metadata는 불필요한 정보라 삭제함.**)
+(**❗️ metadata는 불필요한 정보라 삭제했습니다.**)
 
-![5](https://github.com/may-30/may-30.github.io/assets/155306250/2fdccc99-6c02-474b-a3e7-d0e23f96ce63)
+![5](https://github.com/may-30/may-30.github.io/assets/155306250/2fdccc99-6c02-474b-a3e7-d0e23f96ce63){: .align-center}
 
 이후 kubectl 명령어로 아무런 동작을 취하면 위 사진과 같이 에러가 발생하게 되는데 정상이다.
 
@@ -262,7 +262,7 @@ kind: ConfigMap
 
 ### 2-1-1. 사전 정의된 eks 액세스 항목 종류
 
-![6](https://github.com/may-30/may-30.github.io/assets/155306250/87489425-82d4-4c86-ab00-f00fcefacd1d)
+![6](https://github.com/may-30/may-30.github.io/assets/155306250/87489425-82d4-4c86-ab00-f00fcefacd1d){: .align-center}
 
 사전 정의된 eks 액세스 항목 종류는 총 5가지이며 각각의 세세한 항목들은 [링크](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/access-policies.html#access-policy-permissions)를 통해서 확인할 수 있다.
 
@@ -270,32 +270,32 @@ kind: ConfigMap
 
 ### 2-1-2. eks 액세스 항목 생성
 
-![7](https://github.com/may-30/may-30.github.io/assets/155306250/aecc1e0a-0205-4c4a-9e59-577b3d73f62f)
+![7](https://github.com/may-30/may-30.github.io/assets/155306250/aecc1e0a-0205-4c4a-9e59-577b3d73f62f){: .align-center}
 
 액세스 항목 생성으로 들어간다.
 
-![8](https://github.com/may-30/may-30.github.io/assets/155306250/5beb1045-3598-4609-80a7-d07f3e6178af)
+![8](https://github.com/may-30/may-30.github.io/assets/155306250/5beb1045-3598-4609-80a7-d07f3e6178af){: .align-center}
 
 iam 보안 주체는 역할, 사용자를 선택할 수 있다.
 
 다만, iam 사용자를 선택하면 유형은 표준으로 잡아주어야 한다.
 
-![9](https://github.com/may-30/may-30.github.io/assets/155306250/b6fc3403-7fd1-4a95-b3c3-68f905e2247e)
+![9](https://github.com/may-30/may-30.github.io/assets/155306250/b6fc3403-7fd1-4a95-b3c3-68f905e2247e){: .align-center}
 
 사용자 이름의 경우에는 [eks 공식 문서](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/access-entries.html) 상 특별한 경우가 아니라면 별도로 지정하지 않을 것을 권장한다고 되어 있다.
 
-![10](https://github.com/may-30/may-30.github.io/assets/155306250/4c28e58d-5cb4-46d1-8ddd-e59919cd6a38)
+![10](https://github.com/may-30/may-30.github.io/assets/155306250/4c28e58d-5cb4-46d1-8ddd-e59919cd6a38){: .align-center}
 
 이번에는 `kube-system`에 대해서만 읽을 수 있는 권한을 생성한다.
-(**❗️ 반드시 정책 추가 버튼을 클릭해야 한다.**)
+(**❗️ 반드시 정책 추가 버튼을 클릭해야 합니다.**)
 
-![11](https://github.com/may-30/may-30.github.io/assets/155306250/d9831cb3-6d2f-4a04-b721-7bccbae4e235)
+![11](https://github.com/may-30/may-30.github.io/assets/155306250/d9831cb3-6d2f-4a04-b721-7bccbae4e235){: .align-center}
 
 생성된 모습을 확인할 수 있다.
 
 ### 2-1-3. eks 액세스 항목 테스트
 
-![12](https://github.com/may-30/may-30.github.io/assets/155306250/a3ddcd6b-2501-4889-bdb3-67ed301c48da)
+![12](https://github.com/may-30/may-30.github.io/assets/155306250/a3ddcd6b-2501-4889-bdb3-67ed301c48da){: .align-center}
 
 모든 namespace에 대해서 조회하는 명령 - forbidden : 정상
 
@@ -307,25 +307,25 @@ kube-system namespace에 대해서 삭제하는 명령 - forbidden : 정상
 
 이번 테스트는 aws-auth와 동일한 결과를 예상하지만 aws-auth에서 행해야 할 작업을 aws console ui에서만 하는 테스트가 될 것이다.
 
-(**❗️ 테스트를 시작하기에 앞서 기존에 만들어 둔 EKS 액세스 항목을 삭제해주어야 한다.**)
+(**❗️ 테스트를 시작하기에 앞서 기존에 만들어 둔 EKS 액세스 항목을 삭제해주어야 합니다.**)
 
 ### 2-2-1. eks 액세스 항목 생성
 
-![13](https://github.com/may-30/may-30.github.io/assets/155306250/a235f07f-973c-4f9a-b942-887cfd1d922e)
+![13](https://github.com/may-30/may-30.github.io/assets/155306250/a235f07f-973c-4f9a-b942-887cfd1d922e){: .align-center}
 
 기존에 생성해두었던 `read-only` group을 연결한다.
 
-![14](https://github.com/may-30/may-30.github.io/assets/155306250/1d4878c1-93be-4ae2-89e8-c4ae5ed561d0)
+![14](https://github.com/may-30/may-30.github.io/assets/155306250/1d4878c1-93be-4ae2-89e8-c4ae5ed561d0){: .align-center}
 
 이번에는 중요한 점이 **"2단계 : 액세스 정책 추가"** 단계에서 아무런 정책을 기재하지 않는다는 점이다.
 
-![15](https://github.com/may-30/may-30.github.io/assets/155306250/a6c34cdd-b22e-4790-9bac-147259d568da)
+![15](https://github.com/may-30/may-30.github.io/assets/155306250/a6c34cdd-b22e-4790-9bac-147259d568da){: .align-center}
 
 위 사진과 같이 정상적으로 생긴 것을 확인할 수 있다.
 
 ### 2-2-2. eks 액세스 항목 테스트
 
-![16](https://github.com/may-30/may-30.github.io/assets/155306250/1b169c5d-5e3a-4721-a707-a69dd1458b70)
+![16](https://github.com/may-30/may-30.github.io/assets/155306250/1b169c5d-5e3a-4721-a707-a69dd1458b70){: .align-center}
 
 `aws-auth` 테스트와 동일한 결과가 출력되는 것을 확인할 수 있다.
 
