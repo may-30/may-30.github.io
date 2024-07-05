@@ -162,11 +162,11 @@ curl -I -L http://alb-integrated.may30.xyz
 
 ### 1-2-2. k8s 자원 생성
 
-![8](https://github.com/may-30/may-30.github.io/assets/155306250/30938cdb-bb27-4058-9310-7476b29fa955){: .align-center}
+![8](https://github.com/may-30/may-30.github.io/assets/155306250/f579f831-891e-4776-8c90-91a4c40f098e){: .align-center}
 
 우선 위 사진과 같이 비어있는 target group을 생성해주어야 한다.
 
-(**❗️ protocol, port가 있는 빨간색 네모 박스 확인할 수 있듯이 실제 alb에서 listener에 연결될 port를 기입한다.**)
+(**❗️ 빨간색 네모 박스 확인할 수 있듯이 80 port로 생성해주어야 합니다.**)
 
 ```yaml
 apiVersion: apps/v1
@@ -219,7 +219,7 @@ spec:
 
 ![9](https://github.com/may-30/may-30.github.io/assets/155306250/ebda52a8-a1f2-432c-9db9-5f1244abc250){: .align-center}
 
-![10](https://github.com/may-30/may-30.github.io/assets/155306250/56bbdb19-4270-4119-94d3-0831f4b3472d){: .align-center}
+![10](https://github.com/may-30/may-30.github.io/assets/155306250/ae395d62-0405-4841-b909-dade940893b9){: .align-center}
 
 비어있던 target group에 성공적으로 연결된 모습을 확인할 수 있다.
 
