@@ -30,4 +30,3 @@ layout: null
     </url>
     {% endfor %}
 </urlset>
-view raw
