@@ -26,7 +26,11 @@ ingress nginx controller를 사용하면서 redirect를 구현하면서 예상�
 
 따라서 aws load balancer controller를 설치하면 같이 생성되는 crd를 활용해야 한다.
 
-[링크](https://github.com/kubernetes/ingress-nginx/issues/8026)를 보면 관련 설명들이 나오며 가장 중요한 포인트는 **ingress nginx는 aws nlb의 속성을 제대로 사용하지 못한다는 점, aws nlb의 속성을 활용하고 싶다면 aws laod balancer controller를 설치하라는 점**이다.
+[링크](https://github.com/kubernetes/ingress-nginx/issues/8026)를 보면 관련 설명들이 나오며 가장 중요한 포인트는 아래 2가지이다.
+
+1. ingress nginx는 aws nlb의 속성을 제대로 사용하지 못함.
+
+2. aws nlb의 속성을 활용하고 싶다면 aws laod balancer controller를 설치.
 </div>
 
 아 그리고 나의 경우 `helm`으로 설치했다.
