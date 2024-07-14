@@ -28,29 +28,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <!-- <span class="nav__sub-title">IAC</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "terraform" %}
-                        <li><a href="/categories/terraform" class="">Terraform ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> -->
-        <!-- <span class="nav__sub-title">DEV</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "flutter" %}
-                        <li><a href="/categories/flutter" class="">Flutter ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "java" %}
-                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> -->
       </li>
   </ul>
 </nav>
