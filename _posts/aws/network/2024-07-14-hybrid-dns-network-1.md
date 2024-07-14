@@ -121,7 +121,7 @@ yum install -y bind bind-utils
 
 `/var/named/idc.com.zone` 파일을 생성하고 아래 내용을 추가한다.
 
-```txt
+```md
 $TTL 86400
 @ IN SOA ns1.cloud.com. root.cloud.com. (
     2013042201 ;Serial
@@ -146,7 +146,7 @@ app IN A << idc vpc App Private IP >>
 
 `/etc/named.conf` 파일의 내용을 아래와 같이 변경한다.
 
-```txt
+```md
 options {
     directory "/var/named";
     dump-file "/var/named/data/cache_dump.db";
