@@ -26,12 +26,12 @@ last_modified_at: 2024-07-14
 2. [IDC 환경] Openswan 구축, DNS 서버 구축
 3. [AWS - IDC 환경] Routing 설정
 4. [AWS 환경] Private Hosted Zone Route53 구축
-5. AWS -> IDC로 질의하는 경우
-   1. [AWS 환경] Outbound Resolver Endpoint 생성
-   2. [AWS 환경] Rules 생성
-6. IDC -> AWS로 질의하는 경우
+5. IDC -> AWS로 질의하는 경우
    1. [AWS 환경] Inbound Resolver Endpoint 생성
    2. [IDC 환경] DNS Fowarder 설정
+6. AWS -> IDC로 질의하는 경우
+   1. [AWS 환경] Outbound Resolver Endpoint 생성
+   2. [AWS 환경] Rules 생성
 
 이번 포스팅에서는 사전 준비 격인 아래 4가지를 테스트할 것이다.
 
