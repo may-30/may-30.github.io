@@ -21,13 +21,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <!-- <ul>
+            <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "network" %}
-                        <li><a href="/categories/network" class="">Network ({{category[1].size}})</a></li>
+                    {% if category[0] == "mq" %}
+                        <li><a href="/categories/mq" class="">MQ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> -->
+            </ul>
         <!-- <span class="nav__sub-title">IAC</span>
             <ul>
                 {% for category in site.categories %}
