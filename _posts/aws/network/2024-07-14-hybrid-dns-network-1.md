@@ -33,7 +33,7 @@ last_modified_at: 2024-07-14
    1. [AWS 환경] Inbound Resolver Endpoint 생성
    2. [IDC 환경] DNS Fowarder 설정
 
-이번 포스팅에서는 사전 준비 격인 아래 3가지를 테스트할 것이다.
+이번 포스팅에서는 사전 준비 격인 아래 4가지를 테스트할 것이다.
 
 1. [AWS - IDC 환경] Site to Site VPN 구축
 2. [IDC 환경] Openswan 구축, DNS 서버 구축
