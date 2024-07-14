@@ -3,7 +3,7 @@ title: "[Amazon MQ] 설정 및 구성"
 categories:
   - mq
 tags:
-  - [mq]
+  - [active mq]
 toc: true
 toc_sticky: true
 date: 2024-07-14
