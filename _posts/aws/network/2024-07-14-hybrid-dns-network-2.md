@@ -28,7 +28,7 @@ last_modified_at: 2024-07-15
 4. [AWS 환경] Private Hosted Zone Route53 구축
 5. IDC -> AWS로 질의하는 경우
    1. [AWS 환경] Inbound Resolver Endpoint 생성
-   2. [IDC 환경] DNS Fowarder 설정
+   2. [IDC 환경] DNS Forwarder 설정
 6. AWS -> IDC로 질의하는 경우
    1. [AWS 환경] Outbound Resolver Endpoint 생성
    2. [AWS 환경] Rules 생성
@@ -37,7 +37,7 @@ last_modified_at: 2024-07-15
 
 5. IDC -> AWS로 질의하는 경우
    1. [AWS 환경] Inbound Resolver Endpoint 생성
-   2. [IDC 환경] DNS Fowarder 설정
+   2. [IDC 환경] DNS Forwarder 설정
 6. AWS -> IDC로 질의하는 경우
    1. [AWS 환경] Outbound Resolver Endpoint 생성
    2. [AWS 환경] Rules 생성
@@ -62,7 +62,7 @@ Security Group의 경우 Inbound Resolver Endpoint로 질의를 하는 것은 �
 
 권장하는 사항으로 Inbound Resolver Endpoint를 생성할 때는 IDC DNS 서버에 등록해주어야 하니 빨간색 네모박스처럼 IP를 고정해서 가져가는 것이 좋다.
 
-## 5-2. [IDC 환경] DNS Fowarder 설정
+## 5-2. [IDC 환경] DNS Forwarder 설정
 
 ### 5-2-1. DNS Forwarder 설정
 

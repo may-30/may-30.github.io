@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-07-14
-last_modified_at: 2024-07-14
+last_modified_at: 2024-07-15
 ---
 
 ![amazon-r53](https://github.com/user-attachments/assets/8fa07248-7181-4e2c-8821-5ad40127d1fa){: .align-center}
@@ -28,7 +28,7 @@ last_modified_at: 2024-07-14
 4. [AWS 환경] Private Hosted Zone Route53 구축
 5. IDC -> AWS로 질의하는 경우
    1. [AWS 환경] Inbound Resolver Endpoint 생성
-   2. [IDC 환경] DNS Fowarder 설정
+   2. [IDC 환경] DNS Forwarder 설정
 6. AWS -> IDC로 질의하는 경우
    1. [AWS 환경] Outbound Resolver Endpoint 생성
    2. [AWS 환경] Rules 생성
