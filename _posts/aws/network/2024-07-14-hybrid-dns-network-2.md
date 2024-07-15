@@ -7,7 +7,7 @@ tags:
 toc: true
 toc_sticky: true
 date: 2024-07-14
-last_modified_at: 2024-07-14
+last_modified_at: 2024-07-15
 ---
 
 ![amazon-r53](https://github.com/user-attachments/assets/8fa07248-7181-4e2c-8821-5ad40127d1fa){: .align-center}
@@ -98,7 +98,7 @@ service named restart
 
 cloud vpc의 DNS 서버 IP만 입력한다.
 
-(**❗️ AWS 자체에서 제공하는 DNS 서버는 VPC Cidr + 2이다.**)
+(**❗️ AWS 자체에서 제공하는 DNS 서버는 VPC Cidr + 2입니다.**)
 
 ### 6-1-2. Outbound Resolver Endpoint 생성
 
