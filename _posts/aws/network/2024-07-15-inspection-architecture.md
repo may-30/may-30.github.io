@@ -10,7 +10,7 @@ date: 2024-07-15
 last_modified_at: 2024-07-15
 ---
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 0 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![aws-transit-gateway](https://github.com/user-attachments/assets/30b4f25d-e88e-4c83-9c9f-df2771e6861d){: .align-center}
 
 # 0. 작성 취지
 
@@ -24,7 +24,7 @@ last_modified_at: 2024-07-15
 
 이번 기회에 정확한 테스트를 하고 나서 완벽하게 인지해보려고 한다.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![1](https://github.com/user-attachments/assets/e1c5f2a9-b8ae-4ab2-8e3a-9ee61785c5f9){: .align-center}
 
 구현하려는 최종 아키텍처이며 보다 정확한 테스트를 위해서 아키텍처에 라우팅 테이블까지 표기했다.
 
@@ -38,23 +38,24 @@ last_modified_at: 2024-07-15
 
 # 1. ins vpc의 tgw subnet routing table 제거
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![2](https://github.com/user-attachments/assets/598fb21c-37db-4c8a-8671-c503f38a9e3f){: .align-center}
+
+![3](https://github.com/user-attachments/assets/77e45062-0734-4da8-9ff9-dfbdfdffbb3e){: .align-center}
 
 기존에는 dev vpc의 App 서버와 prd vpc의 App 서버 간에 서로 `ping` 통신이 잘 되는 모습을 확인할 수 있다.
 
 (**❗️ Network Firewall Rule Group에 ICMP를 열어주었습니다.**)
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![4](https://github.com/user-attachments/assets/f7e37765-1f9a-4f5a-bcff-567b6b63f1a9){: .align-center}
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 5 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![5](https://github.com/user-attachments/assets/878cb179-b03a-49a0-a5a1-bdb370aa1bec){: .align-center}
 
 아키텍처 상에 빨간색 네모 박스에 해당되는 부분을 삭제하여 AWS 콘솔 화면처럼 삭제한 모습을 확인할 수 있다.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 6 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![6](https://github.com/user-attachments/assets/364877b2-5537-4b18-85b9-c223ed73a79d){: .align-center}
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<< 7 >>>>>>>>>>>>>>>>>>>>>>>>>>>>{: .align-center}
+![7](https://github.com/user-attachments/assets/9ce293b5-bfcb-434b-96f9-3c123ef18496){: .align-center}
 
 곧장 `ping` 통신을 보내보면 `packet loss`가 발생한다.
 
