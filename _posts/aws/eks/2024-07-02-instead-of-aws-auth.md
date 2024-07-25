@@ -3,11 +3,11 @@ title: "[EKS] aws auth 사라진다"
 categories:
   - eks
 tags:
-  - [aws-auth]
+  - [eks auth, aws auth]
 toc: true
 toc_sticky: true
 date: 2024-07-02
-last_modified_at: 2024-07-03
+last_modified_at: 2024-07-25
 ---
 
 ![aws-eks](https://github.com/may-30/may-30.github.io/assets/155306250/9152a129-69af-4e72-8cd8-9f41524e0681){: .align-center}
