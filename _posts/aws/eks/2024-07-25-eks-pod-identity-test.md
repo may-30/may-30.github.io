@@ -60,7 +60,7 @@ curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-cont
 
 ### 1-1-2. IAM Role 생성
 
-![2](https://github.com/user-attachments/assets/190b655b-7d07-4d03-995a-712f3acd3832){: .align-center}
+![2](https://github.com/user-attachments/assets/30f07991-573e-4f3d-97ca-89ac6d4dbca8){: .align-center}
 
 ```json
 {
@@ -102,7 +102,7 @@ alb controller의 경우 `kube-system` Namespace에 생성되는 것이 기본�
 
 전에 만들어 놓은 IAM Role을 선택하고 연결할 Service Account의 Namespace와 Service Account를 선택한다.
 
-![5](https://github.com/user-attachments/assets/c12822b6-4439-4099-8fbd-c58674bdb10f){: .align-center}
+![5](https://github.com/user-attachments/assets/80e066f1-2b26-4211-bb5d-1976df45da85){: .align-center}
 
 위 사진처럼 정상적으로 생성된 모습을 확인할 수 있다.
 
