@@ -75,7 +75,7 @@ Private Load Balancer를 생성하는 이유는 Route 53 Private Hosted Zone에 
 
 ![4](https://github.com/user-attachments/assets/4cf6c80b-5085-4efd-875d-e303d7bc54a9){: .align-center}
 
-우와 같이 Internal인 Load Balancer를 생성한다.
+위와 같이 Internal인 Load Balancer를 생성한다.
 
 ```yaml
 apiVersion: elbv2.k8s.aws/v1beta1
